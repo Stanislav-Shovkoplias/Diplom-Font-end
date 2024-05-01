@@ -1,0 +1,153 @@
+.product-room-main {
+    flex-grow: 1;
+
+    display: flex;
+    justify-content: space-between;
+    .content {
+
+        h1{
+            text-align: center;
+            font-size: 2rem;
+        }
+        background-color: var(--light);
+        border-radius: 12px;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+        margin: 1rem 2rem;
+        padding: 1rem;
+        flex-grow: 1;
+    }
+
+    .photo-and-text{
+        margin-top: 1rem;
+        display: flex;
+        gap: 1rem;
+    }
+
+    .photo-container {
+        border: 1px solid #000;
+        width: 400px;
+        img{
+            display: block;
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+
+    .text-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap:1rem;
+        .top {
+            padding: 0.3rem 0.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        
+    }
+
+    .product-expiration{
+        background-color: var(--black);
+        padding: 0.3rem 0.5rem;
+        border-radius: 6px;
+        color: var(--light);
+    }
+
+    .product-gui{
+        margin: 1rem 0 0 0;
+        .status-bar {
+
+        }
+
+        .status-status{
+            // span{
+            //     font-weight: 700;
+            // }
+            text-align: center;
+            font-size: 1.2rem;
+            .status-active{
+                color: var(--green);
+            }
+            .status-closed{
+                color: var(--red);
+            }
+        }
+
+        .bid-status{
+            
+        }
+
+        .input-bar{
+            display: flex;
+            gap:1rem;
+            input{
+                outline: none;
+            }
+            button {
+                border: none;
+                padding: 0.3rem 1rem;
+                border-radius: 6px;
+                background-color: var(--green);
+                color: var(--light);
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+    .chat {
+        border: 1px solid #000;
+        width: min(400px,30vw);
+        background-color: var(--black);
+        color: var(--light);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        ul {
+            overflow-y: scroll;
+            flex-grow: 1;
+            padding: 1rem 1.5rem;
+        }
+    }
+
+    .chat-ui {
+        background-color: var(--dark);
+        padding: 0.5rem 1rem;
+        display: flex;
+        justify-content: space-between;
+        gap:1rem;
+        .left {
+            flex-grow: 1;
+
+            textarea{
+                line-height: 1.5;
+                font-size: 0.9rem;
+                outline: none;
+                width: 100%;
+                resize: none;
+                height: calc(0.6rem + 3rem);
+                padding: 0.3rem 0.5rem;
+            }
+        }
+
+        .right {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            & > *{
+                flex-grow: 1;
+            }
+        }
+        fieldset {
+            border: none;
+        }
+    }
+}
